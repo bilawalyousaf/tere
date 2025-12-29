@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Save Money, Make Friends</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/tere.png" alt="">
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Contact</a>
+                 <a href="#" class="help-center-btn">
+        <span class="btn-text">Help Center</span>
+    </a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!</h1>
+                <p class="subtitle">Its simple and its free. Play your part in reducing Carbon Footprint and help Mother Nature to sustain its beauty. So what are you waiting for ? Lets ride together</p>
+                <p class="call-to-action"></p>
+                
+                <div class="download-buttons">
+                    <div class="download-btn">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span class="small-text">Download on the</span>
+                            <span class="platform">App Store</span>
+                        </div>
+                    </div>
+                    <div class="download-btn">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span class="small-text">Get it on</span>
+                            <span class="platform">Google Play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                    <div class="image-container">
+    <img src="images/Group 78.png" alt="EcoRide App Screenshot" class="phone-image">
+</div>
+   
+        </main>
+
+     
+    </div>
+<!-- HOW TERE WORKS Section with Circle -->
+<section class="tere-works-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">HOW <span class="highlight">TERE</span> WORKS</h2>
+            <p class="section-subtitle">Download and install the tere app. Enter your phone number and make your user account. when approved you may start driving.</p>
+        </div>
+        
+        <div class="works-content-circle">
+            <!-- Left side - Steps 1 & 2 -->
+            <div class="steps-left-circle">
+                <!-- Step 1 -->
+                <div class="step-circle">
+                    <div class="step-number-circle">1</div>
+                    <div class="step-content-circle">
+                        <h3 class="step-title-circle">REQUEST A RIDE</h3>
+                        <p class="step-description-circle">Have to reach office or going for shopping ? Just put your current location and destination and search a ride that suits you</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-circle">
+                    <div class="step-number-circle">2</div>
+                    <div class="step-content-circle">
+                        <h3 class="step-title-circle">POST A RIDE</h3>
+                        <p class="step-description-circle">Going somewhere but hate to travel alone – just post your ride details and publish it</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Center Circle -->
+            <div class="center-circle-container">
+                <div class="main-circle">
+                    <div class="circle-content">
+                        <div class="circle-text">
+                            <h3 class="circle-title">Let's go.</h3>
+                            <p class="circle-subtitle">Get a link</p>
+                            <p class="circle-subtitle">to download the app.</p>
+                        </div>
+                        
+                        <div class="circle-phone-input">
+                            <div class="circle-country">
+                                <span>+91</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="circle-input">
+                                <span>Enter mobile phone number</span>
+                            </div>
+                        </div>
+                        
+                        <div class="circle-divider">
+                            <span>or</span>
+                        </div>
+                        
+                        <div class="circle-drive-btn">
+                            <span>APPLY TO DRIVE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right side - Steps 3 & 4 -->
+            <div class="steps-right-circle">
+                <!-- Step 3 -->
+                <div class="step-circle">
+                    <div class="step-number-circle">3</div>
+                    <div class="step-content-circle">
+                        <h3 class="step-title-circle">INSTANT NOTIFICATIONS</h3>
+                        <p class="step-description-circle">Get instant notifications for your rides and be in contact with fellow riders all the time</p>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step-circle">
+                    <div class="step-number-circle">4</div>
+                    <div class="step-content-circle">
+                        <h3 class="step-title-circle">CASHLESS PAYMENT</h3>
+                        <p class="step-description-circle">Payment made easy by using your own Wallet – no more cash to carry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        // Simple animation for download buttons
+        document.querySelectorAll('.download-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+                
+                // Show download confirmation
+                const platform = this.querySelector('.platform').textContent;
+                alert(`Starting download for ${platform}. Thank you for choosing EcoRide!`);
+            });
+        });
+    </script>
+</body>
+</html>
